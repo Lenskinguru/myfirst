@@ -43,16 +43,17 @@
 
     <hr>
 
-    <h3>Where have I found some good cats</h3>
-    <table border="1">
+    <h2>Where have I found some good cats</h2>
+    <table>
         <tr>
             <th>Year</th>
             <th>Place</th>
             <th>Type</th>
         </tr>
-        <td>In 2003</td>
-        <td>In a pet shop</td>
-        <td>Little black cat</td>
+        <tr>
+            <td>In 2003</td>
+            <td>In a pet shop</td>
+            <td>Little black cat</td>
         </tr>
         <tr>
             <td>In 2017</td>
@@ -63,7 +64,7 @@
 
     <hr>
 
-    <h4>What online learning platforms do I use?</h4>
+    <h2>What online learning platforms do I use?</h2>
     <ul>
         <li><a href="https://www.youtube.com/watch?v=DOEtVdkKwcU&t=1359s" target="_blank">youtube kurz</a></li>
         <li><a target="_blank" href="youtube.html">other courses</a></li>
@@ -72,21 +73,20 @@
     <hr>
 
     <h5>How to send me Meow</h5>
-    <form action="/">
+    <form action="/test" method="post">
         <label for="name">Your name</label>
-        <input type="text" id="name" placeholder="Type your name here">
+        <input type="text" id="name" name="user_entered_name" placeholder="Type your name here">
 
         <br>
 
-        <label for="password">Your password</label>
-        <input type="text" id="meow" placeholder="Type your secret here">
-
+        <label for="pwd">Your password</label>
+        <input type="password" id="pwd" name="user_pwd" placeholder="Type your secret here">
 
         <br>
 
-        <label for="meow">Your meow for Lenski</label>
-        <textarea id="text" rows="5" placeholder="Type some meows u wanna say"></textarea>
-        <input type="submit" id="send" value="send meow">
+        <label for="descr">Your meow for Lenski</label>
+        <textarea id="descr" rows="5" name="user_desc" placeholder="Type some meows u wanna say"></textarea>
+        <input type="submit" value="send meow">
     </form>
 </body>
 
