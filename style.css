@@ -8,6 +8,7 @@ body {
   font-size: 20px;
   font-weight: normal;
   font-family: "Roboto", sans-serif;
+  
 
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   /* font: normal 20px 'Roboto', sans-serif; */
@@ -51,10 +52,20 @@ a:active {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 4px 4px 14px rgba(0, 0, 0, 025);
 }
+ /* box-shadow: 4px 4px 14px rgba(0, 0, 0, 025); */
+ 
 .info {
-    margin-bottom: 15px;
+    margin: 15px;
+    padding-left: 50px
+
+}
+.info h3 {
+    font-style: italic;
+    font-size: 16px;
+    padding-left: 340px;
+    color: #86898f;
+
 }
 .info p {
   color: #86898f;
@@ -74,6 +85,33 @@ a:active {
     margin-bottom: 10px;
     border-bottom: 1px solid gray;
 }
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: brown
+}
+.thanku {
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bongocat {
+    margin-left: 70px;
+        width: 250px;
+        height: 200px;
+        border-radius: 50%;
+}
+
+/*
+.table tr:nth-child(odd){
+    background: red;
+} */
 /* box model */
 /*
 .main {
