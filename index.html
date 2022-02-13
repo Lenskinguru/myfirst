@@ -4,90 +4,86 @@
 <head>
     <meta charset="UTF-8" />
     <title> Meow CV Lenski </title>
+    <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51IB3+DGB6L._SX258_BO1,204,203,200_.jpg"
-                    width="250" height="300" />
-            </td>
-            <td>
-                <img src="avatar.jpg" width="300" height="300" alt="my photo" />
-            </td>
-        </tr>
-    </table>
-    <h1>Nadezda Budarina</h1>
-    <p><em>Очень хочется стать <strong>разработчиком</strong></em></p>
-    <p>Я люблю котиков</p>
+    <div class="info">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51IB3+DGB6L._SX258_BO1,204,203,200_.jpg" width="250"
+            height="300" />
+        <img src="avatar.jpg" alt="my photo" class="avatar" />
+        <h1>Nadia Lenski</h1>
+        <p>Очень хочется стать <strong>разработчиком</strong></p>
+        <p>и я люблю котиков</p>
+    </div>
 
-    <hr>
+    <div class="card bg-green">
+        <h2>Мои любимые занятия</h2>
+        <ul class="list" >
+            <li>спать</li>
+            <li>обниматься</li>
+        </ul>
+    </div>
 
-    <h2>мои любимые занятия</h2>
-    <ul type="square">
+    <div class="card bg-yellow">
+        <h2>My language skills</h2>
+        <ol class="list">
+            <li>Russian</li>
+            <li>English</li>
+            <li>Czech</li>
+            <li>German</li>
+        </ol>
+    </div>
 
-        <li>спать</li>
-        <li>обниматься</li>
-    </ul>
+    <div class="card bg-red">
+        <h2>Where have I found some good cats</h2>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Place</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>In 2003</td>
+                <td>In a pet shop</td>
+                <td>Little black cat</td>
+            </tr>
+            <tr>
+                <td>In 2017</td>
+                <td>in a shelter</td>
+                <td>Brown cat</td>
+            </tr>
+        </table>
+    </div>
 
-    <hr>
+    <div class="card bg-blue">
+        <h2>What online learning platforms do I use?</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=DOEtVdkKwcU&t=1359s" target="_blank">youtube kurz</a></li>
+            <li><a target="_blank" href="youtube.html">other courses</a></li>
+        </ul>
+    </div>
 
-    <h2>My language skills</h2>
-    <ol>
-        <li>Russian</li>
-        <li>English</li>
-        <li>Czech</li>
-        <li>German</li>
-    </ol>
+    <div class="card bg-rosybrown">
+        <h2>How to send me Meow</h2>
+        <form action="/test" method="post">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="user_entered_name" placeholder="Type your name here">
 
-    <hr>
+            <br>
 
-    <h2>Where have I found some good cats</h2>
-    <table>
-        <tr>
-            <th>Year</th>
-            <th>Place</th>
-            <th>Type</th>
-        </tr>
-        <tr>
-            <td>In 2003</td>
-            <td>In a pet shop</td>
-            <td>Little black cat</td>
-        </tr>
-        <tr>
-            <td>In 2017</td>
-            <td>in a shelter</td>
-            <td>Brown cat</td>
-        </tr>
-    </table>
+            <label for="pwd">Your password</label>
+            <input type="password" id="pwd" name="user_pwd" placeholder="Type your secret here">
 
-    <hr>
+            <br>
 
-    <h2>What online learning platforms do I use?</h2>
-    <ul>
-        <li><a href="https://www.youtube.com/watch?v=DOEtVdkKwcU&t=1359s" target="_blank">youtube kurz</a></li>
-        <li><a target="_blank" href="youtube.html">other courses</a></li>
-    </ul>
+            <label for="descr">Your meow for Lenski</label>
+            <textarea id="descr" rows="5" name="user_desc" placeholder="Type some meows u wanna say"></textarea>
+            <input type="submit" value="send meow">
+        </form>
+    </div>
 
-    <hr>
-
-    <h5>How to send me Meow</h5>
-    <form action="/test" method="post">
-        <label for="name">Your name</label>
-        <input type="text" id="name" name="user_entered_name" placeholder="Type your name here">
-
-        <br>
-
-        <label for="pwd">Your password</label>
-        <input type="password" id="pwd" name="user_pwd" placeholder="Type your secret here">
-
-        <br>
-
-        <label for="descr">Your meow for Lenski</label>
-        <textarea id="descr" rows="5" name="user_desc" placeholder="Type some meows u wanna say"></textarea>
-        <input type="submit" value="send meow">
-    </form>
+    <div style="margin-bottom: 200px;"></div>
 </body>
 
 </html>
